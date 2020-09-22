@@ -46,16 +46,6 @@ import org.hibernate.validator.constraints.NotBlank;
                     
             ),
             @NamedQuery(
-                    name = Camping.CAMPING_SEM_RESERVAS,
-                    query = "SELECT c FROM Camping c WHERE c.booking IS EMPTY"
-                    
-            ),
-            @NamedQuery(
-                    name = Camping.CAMPINGS_NUM_ESTADO,
-                    query = "SELECT COUNT(c) FROM Camping c WHERE c.address.estado = ?1"
-                    
-            ),
-            @NamedQuery(
                     name = Camping.ALL_CAMPING,
                     query = "SELECT c FROM Camping c"
             )
