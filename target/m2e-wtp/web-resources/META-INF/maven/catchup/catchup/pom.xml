@@ -32,7 +32,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <glassfish.embedded-static-shell.jar>/Users/laramon.vicente/Downloads/glassfish5/glassfish/lib/embedded/glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar>
+    <glassfish.embedded-static-shell.jar>${env.HOME}/eclipse-workspace/glassfish4/glassfish/lib/embedded/glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar>
   </properties>
   
   <dependencies>
@@ -69,11 +69,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
       <groupId>org.primefaces</groupId>
       <artifactId>primefaces</artifactId>
       <version>6.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-validator</artifactId>
-      <version>5.2.0.Final</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish.main.extras</groupId>
